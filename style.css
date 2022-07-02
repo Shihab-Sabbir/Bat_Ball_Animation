@@ -1,0 +1,24 @@
+.ball{
+    position: relative;
+    left: 180px;
+    bottom: 100px;
+    z-index: -1;
+    height:60px;
+    width: 60px;
+    transition: transform .08s ease .31s;
+}
+
+.bat{
+    z-index: 1;
+    height: 500px;
+    width: 200px;
+    transition: transform .5s ease;
+}
+.field:hover .bat{
+    transform: rotate(-60deg);
+    transform-origin: 100% 0%;
+}
+
+.field:hover .ball{
+    transform: translate(280px,-100px) rotate(180deg);
+}
